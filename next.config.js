@@ -6,5 +6,10 @@ module.exports = {
     includePaths: [path.join(__dirname, "css")],
   },
   trailingSlash: true,
-  distDir: "build",
+  devIndicators: {
+    buildActivity: false,
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
 };
